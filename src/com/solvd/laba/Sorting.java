@@ -34,7 +34,7 @@ public class Sorting {
         }
     }
 
-    static void bubbleSort(int numbers[], int n) {
+    public static void bubbleSort(int numbers[], int n) {
         if (n == 1) {
             return;
         }
@@ -48,7 +48,7 @@ public class Sorting {
         bubbleSort(numbers, n - 1);
     }
 
-    static void Quicksort(int numbers[], int left, int right) {
+    public static void quickSort(int numbers[], int left, int right) {
         int pivot = numbers[left];
         int i = left;
         int j = right;
@@ -66,7 +66,7 @@ public class Sorting {
         }
         numbers[left] = numbers[j];
         numbers[j] = pivot;
-        if (left < j - 1) Quicksort(numbers, left, j - 1);
-        if (j + 1 < right) Quicksort(numbers, j + 1, right);
+        if (left < j - 1) quickSort(numbers, left, j - 1);
+        if (j + 1 < right) quickSort(numbers, j + 1, right);
     }
 }
