@@ -27,7 +27,7 @@ public class Sorting {
             Sorting newArray = new Sorting();
             System.out.println("BUBBLE -> This is the ordered list of numbers: " + Arrays.toString(numbers));
         } else if (sort.equals("quicksort")) {
-            Quicksort(numbers, 0, numbers.length - 1);
+            quickSort(numbers, 0, numbers.length - 1);
             System.out.println("QUICKSORT -> This is the ORDERED list of numbers: " + Arrays.toString(numbers));
         } else {
             System.out.println("I just know bubble and quicksort :(");
