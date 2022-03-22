@@ -1,8 +1,10 @@
 package com.solvd.laba.hierarchy;
 
+import com.solvd.laba.hierarchy.Interface.IMenu;
+
 import java.util.Scanner;
 
-public class Service {
+public class Service{
     private double amountOfMoney;
     private String firstName;
     private String lastName;
@@ -18,7 +20,8 @@ public class Service {
         this.typeClient = typeClient;
         this.optionSelected = optionSelected;
 
-        BankAcount bank = new BankAcount();
+        BankAccount bank = new BankAccount();
+
         Credit credit = new Credit();
 
         credit.Credit(this.firstName, this.lastName, getDeposit());
@@ -26,8 +29,8 @@ public class Service {
         if(this.typeClient == 1){
             switch (this.optionSelected) {
                 case 1:
-                    //search for the bank acount options
-                    bank.BankAcount(this.firstName, this.lastName);
+                    //search for the bank account options
+                    bank.BankAccount(this.firstName, this.lastName);
                     deposit = getDeposit();
                     break;
                 case 2:
@@ -45,6 +48,8 @@ public class Service {
             }
         }
     }
+
+
 
 
 

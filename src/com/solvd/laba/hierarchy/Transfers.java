@@ -1,6 +1,6 @@
 package com.solvd.laba.hierarchy;
 
-public class Transfers extends BankAcount{
+public class Transfers {
 
     public Transfers(){
 

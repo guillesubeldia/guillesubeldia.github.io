@@ -17,7 +17,6 @@ public class Credit extends Service{
 
     public Double generateCredit(double balance){
         this.creditCuantity = balance * 3;
-
         return creditCuantity;
     }
 

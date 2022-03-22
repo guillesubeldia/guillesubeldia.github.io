@@ -2,41 +2,24 @@ package com.solvd.laba.hierarchy;
 
 public class Client extends People{
 
-    private String name;
-    private String surname;
-    private int typePeople;
+    private Integer typePeople;
 
-    public Client(String name, String surname){
-        this.name = name;
-        this.surname = surname;
+    public Client(){
+
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Client(String firstName,String lastName){
+        super(firstName,lastName);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setLastname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getLastname() {
-        return surname;
+    public Client(String firstName,String lastName,Integer typePeople){
+        super(firstName,lastName);
+        this.typePeople = typePeople;
     }
 
     public void setTypePeople(int typePeople){ this.typePeople = typePeople;}
 
     public int getTypePeople(){ return typePeople;}
-
-
-    public void depositMoney(Deposits deposits){
-
-        double amountMoney = deposits.getDeposit();
-
-    }
 
     public void setClientId(){
 

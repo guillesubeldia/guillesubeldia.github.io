@@ -1,24 +1,29 @@
 package com.solvd.laba.hierarchy;
 
-public class Extractions extends BankAcount{
+import com.solvd.laba.hierarchy.Interface.IServices;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Extractions implements IServices {
+
+    private ArrayList<ArrayList<Double>> extractionHistory = new ArrayList<>();
+
     public Extractions(){
-        //super();
 
     }
 
-    public void setExtraction(){
-
+    @Override
+    public void setHistory(Double balance, Double amount) {
+        ArrayList<Double> history = new ArrayList<>();
+        history.add(balance);
+        history.add(amount);
+        this.extractionHistory.add(history);
     }
 
-    public void getExtraction(){
-
-    }
-
-    public void setExtractionHistory(){
-
-    }
-
-    public void getExtractionHistory(){
-
+    @Override
+    public void getHistory() {
+        System.out.println(Arrays.toString(extractionHistory.toArray()));
     }
 }

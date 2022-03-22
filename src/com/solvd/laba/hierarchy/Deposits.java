@@ -1,6 +1,6 @@
 package com.solvd.laba.hierarchy;
 
-public class Deposits extends BankAcount{
+public class Deposits {
     private double amountMoney;
     public Deposits(){
         super();

@@ -3,6 +3,7 @@ package com.solvd.laba.hierarchy;
 import java.util.Scanner;
 
 public class Cards extends Credit{
+
     private String firstName;
     private String lastName;
     private int optionSelected;
