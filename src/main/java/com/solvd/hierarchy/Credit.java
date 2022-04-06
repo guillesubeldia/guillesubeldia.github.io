@@ -1,8 +1,8 @@
 package com.solvd.hierarchy;
 
 import com.solvd.hierarchy.interfaces.IBill;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Credit extends Service implements IBill {
     private static Logger LOGGER = LogManager.getLogger(Main.class);

@@ -1,15 +1,14 @@
 package com.solvd.hierarchy;
 
 import com.solvd.hierarchy.exception.IncorrectOperationException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.util.Scanner;
 
 
 public class Main {
     private static Logger LOGGER = LogManager.getLogger(Main.class);
-
 
     public static void main(String args[]) {
         int typePeople = 1;
